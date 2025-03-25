@@ -10,26 +10,27 @@ import LikesScreen from '../screens/LikesScreen';
 import ChatScreen from '../screens/ChatScreen';
 import ProfileScreen from '../screens/ProfileScreen';
 import {NavigationContainer} from '@react-navigation/native';
-// import LoginScreen from '../screens/LoginScreen';
-// import BasicInfo from '../screens/BasicInfo';
-// import NameScreen from '../screens/NameScreen';
-// import EmailScreen from '../screens/EmailScreen';
-// import OtpScreen from '../screens/OtpScreen';
-// import PasswordScreen from '../screens/PasswordScreen';
-// import DateOfBirthScreen from '../screens/DateOfBirthScreen';
-// import LocationScreen from '../screens/LocationScreen';
-// import GenderScreen from '../screens/GenderScreen';
-// import TypeScreen from '../screens/TypeScreen';
-// import DatingType from '../screens/DatingType';
-// import LookingFor from '../screens/LookingFor';
-// import HomeTownScreen from '../screens/HomeTownScreen';
-// import WorkPlace from '../screens/WorkPlace';
-// import JobTitleScreen from '../screens/JobTitleScreen';
-// import PhotoScreen from '../screens/PhotoScreen';
-// import PromptsScreen from '../screens/PromptsScreen';
-// import ShowPromptsScreen from '../screens/ShowPromptsScreen';
-// import PreFinalScreen from '../screens/PreFinalScreen';
-// import WritePrompt from '../screens/WritePrompt';
+import LoginScreen from '../screens/LoginScreen';
+import BasicInfo from '../screens/BasicInfo';
+import NameScreen from '../screens/NameScreen';
+import EmailScreen from '../screens/EmailScreen';
+import OtpScreen from '../screens/OtpScreen';
+import PasswordScreen from '../screens/PasswordScreen';
+import DateOfBirthScreen from '../screens/DateOfBirthScreen';
+import LocationScreen from '../screens/LocationScreen';
+import GenderScreen from '../screens/GenderScreen';
+import TypeScreen from '../screens/TypeScreen';
+import DatingType from '../screens/DatingType';
+import LookingFor from '../screens/LookingFor';
+import HomeTownScreen from '../screens/HomeTownScreen';
+import WorkPlace from '../screens/WorkPlace';
+import JobTitleScreen from '../screens/JobTitleScreen';
+import PhotoScreen from '../screens/PhotoScreen';
+import PromptsScreen from '../screens/PromptsScreen';
+import ShowPromptsScreen from '../screens/ShowPromptsScreen';
+import PreFinalScreen from '../screens/PreFinalScreen';
+import WritePrompt from '../screens/WritePrompt';
+
 // import {AuthContext} from '../AuthContext';
 // import SendLikeScreen from '../screens/SendLikeScreen';
 // import HandleLikeScreen from '../screens/HandleLikeScreen';
@@ -150,114 +151,114 @@ const StackNavigator = () => {
       </Tab.Navigator>
     );
   }
-//   const AuthStack = () => {
-//     return (
-//       <Stack.Navigator>
-//         <Stack.Screen
-//           name="Login"
-//           component={LoginScreen}
-//           options={{headerShown: false}}
-//         />
-//         <Stack.Screen
-//           name="Basic"
-//           component={BasicInfo}
-//           options={{headerShown: false}}
-//         />
-//         <Stack.Screen
-//           name="Name"
-//           component={NameScreen}
-//           options={{headerShown: false}}
-//         />
-//         <Stack.Screen
-//           name="Email"
-//           component={EmailScreen}
-//           options={{headerShown: false}}
-//         />
-//         <Stack.Screen
-//           name="Otp"
-//           component={OtpScreen}
-//           options={{headerShown: false}}
-//         />
-//         <Stack.Screen
-//           name="Password"
-//           component={PasswordScreen}
-//           options={{headerShown: false}}
-//         />
-//         <Stack.Screen
-//           name="Birth"
-//           component={DateOfBirthScreen}
-//           options={{headerShown: false}}
-//         />
-//         <Stack.Screen
-//           name="Location"
-//           component={LocationScreen}
-//           options={{headerShown: false}}
-//         />
-//         <Stack.Screen
-//           name="Gender"
-//           component={GenderScreen}
-//           options={{headerShown: false}}
-//         />
-//         <Stack.Screen
-//           name="Type"
-//           component={TypeScreen}
-//           options={{headerShown: false}}
-//         />
-//         <Stack.Screen
-//           name="Dating"
-//           component={DatingType}
-//           options={{headerShown: false}}
-//         />
-//         <Stack.Screen
-//           name="LookingFor"
-//           component={LookingFor}
-//           options={{headerShown: false}}
-//         />
+  const AuthStack = () => {
+    return (
+      <Stack.Navigator>
+        {/* <Stack.Screen
+          name="Login"
+          component={LoginScreen}
+          options={{headerShown: false}}
+        /> */}
+        <Stack.Screen
+          name="Basic"
+          component={BasicInfo}
+          options={{headerShown: false}}
+        />
+        <Stack.Screen
+          name="Name"
+          component={NameScreen}
+          options={{headerShown: false}}
+        />
+        <Stack.Screen
+          name="Email"
+          component={EmailScreen}
+          options={{headerShown: false}}
+        />
+        <Stack.Screen
+          name="Otp"
+          component={OtpScreen}
+          options={{headerShown: false}}
+        />
+        <Stack.Screen
+          name="Password"
+          component={PasswordScreen}
+          options={{headerShown: false}}
+        />
+        <Stack.Screen
+          name="Birth"
+          component={DateOfBirthScreen}
+          options={{headerShown: false}}
+        />
+        <Stack.Screen
+          name="Location"
+          component={LocationScreen}
+          options={{headerShown: false}}
+        />
+        <Stack.Screen
+          name="Gender"
+          component={GenderScreen}
+          options={{headerShown: false}}
+        />
+        <Stack.Screen
+          name="Type"
+          component={TypeScreen}
+          options={{headerShown: false}}
+        />
+        <Stack.Screen
+          name="Dating"
+          component={DatingType}
+          options={{headerShown: false}}
+        />
+        <Stack.Screen
+          name="LookingFor"
+          component={LookingFor}
+          options={{headerShown: false}}
+        />
 
-//         <Stack.Screen
-//           name="Hometown"
-//           component={HomeTownScreen}
-//           options={{headerShown: false}}
-//         />
-//         <Stack.Screen
-//           name="Workplace"
-//           component={WorkPlace}
-//           options={{headerShown: false}}
-//         />
-//         <Stack.Screen
-//           name="JobTitle"
-//           component={JobTitleScreen}
-//           options={{headerShown: false}}
-//         />
-//         <Stack.Screen
-//           name="Photos"
-//           component={PhotoScreen}
-//           options={{headerShown: false}}
-//         />
-//         <Stack.Screen
-//           name="Prompts"
-//           component={PromptsScreen}
-//           options={{headerShown: false}}
-//         />
-//         <Stack.Screen
-//           name="ShowPrompts"
-//           component={ShowPromptsScreen}
-//           options={{headerShown: false}}
-//         />
+        <Stack.Screen
+          name="Hometown"
+          component={HomeTownScreen}
+          options={{headerShown: false}}
+        />
+        <Stack.Screen
+          name="Workplace"
+          component={WorkPlace}
+          options={{headerShown: false}}
+        />
+        <Stack.Screen
+          name="JobTitle"
+          component={JobTitleScreen}
+          options={{headerShown: false}}
+        />
+        <Stack.Screen
+          name="Photos"
+          component={PhotoScreen}
+          options={{headerShown: false}}
+        />
+        <Stack.Screen
+          name="Prompts"
+          component={PromptsScreen}
+          options={{headerShown: false}}
+        />
+        <Stack.Screen
+          name="ShowPrompts"
+          component={ShowPromptsScreen}
+          options={{headerShown: false}}
+        />
 
-//         <Stack.Screen
-//           name="WritePrompt"
-//           component={WritePrompt}
-//           options={{headerShown: false}}
-//         />
-//         <Stack.Screen
-//           name="PreFinal"
-//           component={PreFinalScreen}
-//           options={{headerShown: false}}
-//         />
-//       </Stack.Navigator>
-//     );
-//   };
+        <Stack.Screen
+          name="WritePrompt"
+          component={WritePrompt}
+          options={{headerShown: false}}
+        />
+        <Stack.Screen
+          name="PreFinal"
+          component={PreFinalScreen}
+          options={{headerShown: false}}
+        />
+      </Stack.Navigator>
+    );
+  };
   function MainStack() {
     return (
       <Stack.Navigator>
@@ -294,7 +295,7 @@ const StackNavigator = () => {
   return (
     <NavigationContainer>
         {/* test start */}
-        <MainStack /> 
+        <AuthStack /> 
         {/* test end*/}
       {/* {token == null || token == '' ? <AuthStack /> : <MainStack />} */}
     </NavigationContainer>
