@@ -96,7 +96,14 @@ To learn more about React Native, take a look at the following resources:
 - [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
 - [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
 
+setup
 - install react-native-vector-icons
 - create react-native.config.js
 - install reactnavigation
 - install react bottom tab
+Run 
+npx react-native start
+npx  react-native run-android
+
+mở log 
+npx react-native log-android

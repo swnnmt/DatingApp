@@ -18,20 +18,21 @@ import {
   
   const NameScreen = () => {
     const [firstName, setFirstName] = useState('');
-    // const navigation = useNavigation();
+    const navigation = useNavigation();
     // useEffect(() => {
     //   getRegistrationProgress('Name').then(progressData => {
     //     if (progressData) {
     //       setFirstName(progressData.firstName || '');
     //     }
     //   });
+    
     // }, []);
-    // const handleNext = () => {
+    const handleNext = () => {
     //   if (firstName.trim() !== '') {
     //     saveRegistrationProgress('Name', {firstName});
     //   }
-    //   navigation.navigate('Email');
-    // };
+      navigation.navigate('Email');
+    };
     return (
       <SafeAreaView
         style={{
@@ -111,7 +112,7 @@ import {
           </View>
   
           <TouchableOpacity
-            // onPress={handleNext}
+            onPress={handleNext}
             activeOpacity={0.8}
             style={{marginTop: 30, marginLeft: 'auto'}}>
             <Ionicons
